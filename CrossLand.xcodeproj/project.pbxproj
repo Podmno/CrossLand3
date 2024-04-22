@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D7A1F6E2BD6AAB6006D01AF /* TRForumCellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A1F6D2BD6AAB6006D01AF /* TRForumCellButton.swift */; };
+		5D7A1F702BD6C3EB006D01AF /* TRCommonRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A1F6F2BD6C3EB006D01AF /* TRCommonRippleButton.swift */; };
+		5D88ABAD2BD4B46A00347521 /* FirstGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D88ABAC2BD4B46A00347521 /* FirstGuide.storyboard */; };
+		5D9D9F872BD6390E001BC769 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9D9F862BD6390E001BC769 /* Hero */; };
+		5D9D9F892BD63FF3001BC769 /* ImageV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D9F882BD63FF3001BC769 /* ImageV.storyboard */; };
+		5D9D9F8B2BD6650F001BC769 /* VCFirstLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9F8A2BD6650F001BC769 /* VCFirstLogin.swift */; };
+		5D9D9F912BD681D9001BC769 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9F902BD67F14001BC769 /* ZFRippleButton.swift */; };
+		5D9D9F932BD69519001BC769 /* TVForumTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9F922BD69519001BC769 /* TVForumTable.swift */; };
 		5DA62A3A2BD1FE35000D7F65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A392BD1FE35000D7F65 /* AppDelegate.swift */; };
 		5DA62A3C2BD1FE35000D7F65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A3B2BD1FE35000D7F65 /* SceneDelegate.swift */; };
 		5DA62A3E2BD1FE35000D7F65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A3D2BD1FE35000D7F65 /* ViewController.swift */; };
@@ -16,6 +24,13 @@
 		5DA62A512BD1FE39000D7F65 /* CrossLandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A502BD1FE39000D7F65 /* CrossLandTests.swift */; };
 		5DA62A5B2BD1FE39000D7F65 /* CrossLandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A5A2BD1FE39000D7F65 /* CrossLandUITests.swift */; };
 		5DA62A5D2BD1FE39000D7F65 /* CrossLandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A5C2BD1FE39000D7F65 /* CrossLandUITestsLaunchTests.swift */; };
+		5DA62A702BD205C7000D7F65 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA62A6F2BD205C7000D7F65 /* Settings.storyboard */; };
+		5DA62A722BD20C94000D7F65 /* TVCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A712BD20C94000D7F65 /* TVCSettings.swift */; };
+		5DCA438A2BD5FA8700201601 /* VCEmoticonInput2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA43872BD5FA8700201601 /* VCEmoticonInput2.swift */; };
+		5DCA438C2BD5FB1500201601 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCA438B2BD5FB1500201601 /* Keyboard.storyboard */; };
+		5DD4D8BD2BD27BFD001D8D17 /* TRDynamicFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */; };
+		5DD4D8C02BD28E5A001D8D17 /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */; };
+		5DD4D8C22BD29211001D8D17 /* TVCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D7A1F6D2BD6AAB6006D01AF /* TRForumCellButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRForumCellButton.swift; sourceTree = "<group>"; };
+		5D7A1F6F2BD6C3EB006D01AF /* TRCommonRippleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRCommonRippleButton.swift; sourceTree = "<group>"; };
+		5D88ABAC2BD4B46A00347521 /* FirstGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstGuide.storyboard; sourceTree = "<group>"; };
+		5D8D639E2BD4BE9D005AA8ED /* EULAPrivacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EULAPrivacy.md; sourceTree = "<group>"; };
+		5D9D9F802BD61B4C001BC769 /* Acknowledgement.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Acknowledgement.md; sourceTree = "<group>"; };
+		5D9D9F882BD63FF3001BC769 /* ImageV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageV.storyboard; sourceTree = "<group>"; };
+		5D9D9F8A2BD6650F001BC769 /* VCFirstLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFirstLogin.swift; sourceTree = "<group>"; };
+		5D9D9F902BD67F14001BC769 /* ZFRippleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
+		5D9D9F922BD69519001BC769 /* TVForumTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVForumTable.swift; sourceTree = "<group>"; };
 		5DA62A362BD1FE35000D7F65 /* CrossLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA62A392BD1FE35000D7F65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA62A3B2BD1FE35000D7F65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +73,14 @@
 		5DA62A562BD1FE39000D7F65 /* CrossLandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossLandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA62A5A2BD1FE39000D7F65 /* CrossLandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossLandUITests.swift; sourceTree = "<group>"; };
 		5DA62A5C2BD1FE39000D7F65 /* CrossLandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossLandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DA62A692BD1FE48000D7F65 /* CrossLand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrossLand.entitlements; sourceTree = "<group>"; };
+		5DA62A6F2BD205C7000D7F65 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		5DA62A712BD20C94000D7F65 /* TVCSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCSettings.swift; sourceTree = "<group>"; };
+		5DCA43872BD5FA8700201601 /* VCEmoticonInput2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCEmoticonInput2.swift; sourceTree = "<group>"; };
+		5DCA438B2BD5FB1500201601 /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
+		5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRDynamicFont.swift; sourceTree = "<group>"; };
+		5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
+		5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9D9F872BD6390E001BC769 /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +109,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D88ABAB2BD4B44A00347521 /* FirstGuide */ = {
+			isa = PBXGroup;
+			children = (
+				5D88ABAC2BD4B46A00347521 /* FirstGuide.storyboard */,
+				5D9D9F8A2BD6650F001BC769 /* VCFirstLogin.swift */,
+			);
+			path = FirstGuide;
+			sourceTree = "<group>";
+		};
+		5D8D639D2BD4BE85005AA8ED /* EULA */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D639E2BD4BE9D005AA8ED /* EULAPrivacy.md */,
+			);
+			path = EULA;
+			sourceTree = "<group>";
+		};
+		5D9D9F842BD637D4001BC769 /* ImageV */ = {
+			isa = PBXGroup;
+			children = (
+				5D9D9F882BD63FF3001BC769 /* ImageV.storyboard */,
+			);
+			path = ImageV;
+			sourceTree = "<group>";
+		};
+		5D9D9F8C2BD67239001BC769 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				5D9D9F902BD67F14001BC769 /* ZFRippleButton.swift */,
+				5D7A1F6D2BD6AAB6006D01AF /* TRForumCellButton.swift */,
+				5D7A1F6F2BD6C3EB006D01AF /* TRCommonRippleButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		5DA62A2D2BD1FE35000D7F65 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +167,16 @@
 		5DA62A382BD1FE35000D7F65 /* CrossLand */ = {
 			isa = PBXGroup;
 			children = (
+				5D9D9F8C2BD67239001BC769 /* Custom */,
+				5D9D9F842BD637D4001BC769 /* ImageV */,
+				5DCA43862BD5F9E100201601 /* Keyboard */,
+				5D8D639D2BD4BE85005AA8ED /* EULA */,
+				5D88ABAB2BD4B44A00347521 /* FirstGuide */,
+				5DD4D8C32BD2AA44001D8D17 /* CoreLand */,
+				5DD4D8BE2BD28E4D001D8D17 /* Forum */,
+				5DD4D8BB2BD27BEE001D8D17 /* DynamicFont */,
+				5DA62A6A2BD20533000D7F65 /* Preferences */,
+				5DA62A692BD1FE48000D7F65 /* CrossLand.entitlements */,
 				5DA62A392BD1FE35000D7F65 /* AppDelegate.swift */,
 				5DA62A3B2BD1FE35000D7F65 /* SceneDelegate.swift */,
 				5DA62A3D2BD1FE35000D7F65 /* ViewController.swift */,
@@ -106,6 +184,7 @@
 				5DA62A422BD1FE39000D7F65 /* Assets.xcassets */,
 				5DA62A442BD1FE39000D7F65 /* LaunchScreen.storyboard */,
 				5DA62A472BD1FE39000D7F65 /* Info.plist */,
+				5D9D9F802BD61B4C001BC769 /* Acknowledgement.md */,
 			);
 			path = CrossLand;
 			sourceTree = "<group>";
@@ -127,6 +206,49 @@
 			path = CrossLandUITests;
 			sourceTree = "<group>";
 		};
+		5DA62A6A2BD20533000D7F65 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				5DA62A6F2BD205C7000D7F65 /* Settings.storyboard */,
+				5DA62A712BD20C94000D7F65 /* TVCSettings.swift */,
+				5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		5DCA43862BD5F9E100201601 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5DCA43872BD5FA8700201601 /* VCEmoticonInput2.swift */,
+				5DCA438B2BD5FB1500201601 /* Keyboard.storyboard */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		5DD4D8BB2BD27BEE001D8D17 /* DynamicFont */ = {
+			isa = PBXGroup;
+			children = (
+				5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */,
+			);
+			path = DynamicFont;
+			sourceTree = "<group>";
+		};
+		5DD4D8BE2BD28E4D001D8D17 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */,
+				5D9D9F922BD69519001BC769 /* TVForumTable.swift */,
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		5DD4D8C32BD2AA44001D8D17 /* CoreLand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreLand;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +265,9 @@
 			dependencies = (
 			);
 			name = CrossLand;
+			packageProductDependencies = (
+				5D9D9F862BD6390E001BC769 /* Hero */,
+			);
 			productName = CrossLand;
 			productReference = 5DA62A362BD1FE35000D7F65 /* CrossLand.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +340,9 @@
 				Base,
 			);
 			mainGroup = 5DA62A2D2BD1FE35000D7F65;
+			packageReferences = (
+				5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 5DA62A372BD1FE35000D7F65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D88ABAD2BD4B46A00347521 /* FirstGuide.storyboard in Resources */,
+				5D9D9F892BD63FF3001BC769 /* ImageV.storyboard in Resources */,
 				5DA62A432BD1FE39000D7F65 /* Assets.xcassets in Resources */,
+				5DD4D8C02BD28E5A001D8D17 /* Forum.storyboard in Resources */,
+				5DCA438C2BD5FB1500201601 /* Keyboard.storyboard in Resources */,
 				5DA62A462BD1FE39000D7F65 /* Base in Resources */,
 				5DA62A412BD1FE35000D7F65 /* Base in Resources */,
+				5DA62A702BD205C7000D7F65 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +391,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D7A1F702BD6C3EB006D01AF /* TRCommonRippleButton.swift in Sources */,
+				5DD4D8BD2BD27BFD001D8D17 /* TRDynamicFont.swift in Sources */,
 				5DA62A3E2BD1FE35000D7F65 /* ViewController.swift in Sources */,
+				5DCA438A2BD5FA8700201601 /* VCEmoticonInput2.swift in Sources */,
 				5DA62A3A2BD1FE35000D7F65 /* AppDelegate.swift in Sources */,
+				5DD4D8C22BD29211001D8D17 /* TVCLogin.swift in Sources */,
+				5DA62A722BD20C94000D7F65 /* TVCSettings.swift in Sources */,
+				5D7A1F6E2BD6AAB6006D01AF /* TRForumCellButton.swift in Sources */,
+				5D9D9F932BD69519001BC769 /* TVForumTable.swift in Sources */,
+				5D9D9F912BD681D9001BC769 /* ZFRippleButton.swift in Sources */,
 				5DA62A3C2BD1FE35000D7F65 /* SceneDelegate.swift in Sources */,
+				5D9D9F8B2BD6650F001BC769 /* VCFirstLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -440,15 +582,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrossLand/CrossLand.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXSVDYCN2P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrossLand/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +603,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = studio.tri.swift.CrossLand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,15 +617,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CrossLand/CrossLand.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXSVDYCN2P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrossLand/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +638,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = studio.tri.swift.CrossLand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -601,6 +759,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D9D9F862BD6390E001BC769 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5DA62A2E2BD1FE35000D7F65 /* Project object */;
 }

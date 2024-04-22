@@ -1,0 +1,15 @@
+{
+  "originHash" : "329855dbc0943bdd8f9494862b17ade3ff3f72e8424ac224c4754c95304d15c1",
+  "pins" : [
+    {
+      "identity" : "hero",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/HeroTransitions/Hero.git",
+      "state" : {
+        "revision" : "b307e2d48d582118e5101d04f5187c91595a1095",
+        "version" : "1.6.3"
+      }
+    }
+  ],
+  "version" : 3
+}

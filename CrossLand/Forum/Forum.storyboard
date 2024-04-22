@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9UR-p7-WL9">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--forumTable-->
+        <scene sceneID="WAO-LC-TmT">
+            <objects>
+                <tableViewController storyboardIdentifier="forumTable" title="forumTable" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9UR-p7-WL9" customClass="TVCForumTable" customModule="CrossLand" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="oM3-LI-hP3">
+                        <rect key="frame" x="0.0" y="0.0" width="744" height="1133"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupButton" id="ryu-56-qm2" customClass="TVButtonCellGroup" customModule="CrossLand" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="744" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ryu-56-qm2" id="uAa-sh-aKL">
+                                    <rect key="frame" x="0.0" y="0.0" width="744" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xuo-Fx-wvj">
+                                            <rect key="frame" x="16" y="6" width="712" height="48"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX9-zd-7l9" customClass="TRForumCellButton" customModule="CrossLand" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="348" height="48"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="   版面公告">
+                                                        <color key="titleColor" systemColor="tintColor"/>
+                                                        <imageReference key="image" image="exclamationmark.triangle.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnNotice:" destination="ryu-56-qm2" eventType="touchUpInside" id="Gpr-AC-pbO"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nM-CK-nxQ" customClass="TRForumCellButton" customModule="CrossLand" customModuleProvider="target">
+                                                    <rect key="frame" x="364" y="0.0" width="348" height="48"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="   发串">
+                                                        <color key="titleColor" systemColor="tintColor"/>
+                                                        <imageReference key="image" image="pencil.line" catalog="system" symbolScale="large" renderingMode="template"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnPost:" destination="ryu-56-qm2" eventType="touchUpInside" id="Zbp-nP-ulf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="KXS-K8-HKv"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xuo-Fx-wvj" firstAttribute="leading" secondItem="uAa-sh-aKL" secondAttribute="leading" constant="16" id="cut-gc-kk2"/>
+                                        <constraint firstAttribute="trailing" secondItem="xuo-Fx-wvj" secondAttribute="trailing" constant="16" id="fjV-hb-2jg"/>
+                                        <constraint firstItem="xuo-Fx-wvj" firstAttribute="top" secondItem="uAa-sh-aKL" secondAttribute="top" constant="6" id="nqu-Av-xcO"/>
+                                        <constraint firstAttribute="bottom" secondItem="xuo-Fx-wvj" secondAttribute="bottom" constant="6" id="zwh-gT-95D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9UR-p7-WL9" id="Okd-MT-yZI"/>
+                            <outlet property="delegate" destination="9UR-p7-WL9" id="LFA-tu-Z1v"/>
+                        </connections>
+                    </tableView>
+                    <size key="freeformSize" width="744" height="1133"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IH8-5e-8y9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253.2258064516129" y="562.66548984995586"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2nM-CK-nxQ">
+            <size key="intrinsicContentSize" width="73" height="24.5"/>
+        </designable>
+        <designable name="QX9-zd-7l9">
+            <size key="intrinsicContentSize" width="109.5" height="24.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
+        <image name="pencil.line" catalog="system" width="128" height="117"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
