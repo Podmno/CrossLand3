@@ -106,11 +106,23 @@ public class ZFRippleButton: UIButton {
         rippleView.backgroundColor = rippleColor
         rippleView.frame = CGRectMake(x, y, size, size)
         rippleView.layer.cornerRadius = corner
+        
+        // FIXED: Table View Cell
+        if touchCenterLocation != nil {
+            rippleView.center = touchCenterLocation!
+        }
     }
     
     override public func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+        /*
+        rippleView.removeFromSuperview()
+        
+        
+        setup()
+         */
         if trackTouchLocation {
             touchCenterLocation = touch.location(in: self)
+            rippleView.center = touchCenterLocation!
         } else {
             touchCenterLocation = nil
         }
@@ -121,8 +133,8 @@ public class ZFRippleButton: UIButton {
         
         rippleView.transform = CGAffineTransformMakeScale(0.5, 0.5)
         
-        
-        UIView.animate(withDuration: 1.5, delay: 0, options: [UIView.AnimationOptions.curveEaseOut, UIView.AnimationOptions.allowUserInteraction],
+
+        UIView.animate(withDuration: 0.8, delay: 0, options: [UIView.AnimationOptions.curveEaseOut, UIView.AnimationOptions.allowUserInteraction],
             animations: {
                 self.rippleView.transform = CGAffineTransformIdentity
             }, completion: nil)
@@ -145,6 +157,7 @@ public class ZFRippleButton: UIButton {
             
             layer.add(groupAnim, forKey:"shadow")
         }
+        //touchCenterLocation = touch.location(in: self)
         return super.beginTracking(touch, with: event)
     }
     
@@ -154,11 +167,16 @@ public class ZFRippleButton: UIButton {
     }
     
     override public func endTracking(_ touch: UITouch?, with event: UIEvent?) {
+
+        
         super.endTracking(touch, with: event)
         animateToNormal()
     }
     
     private func animateToNormal() {
+
+        //rippleView.center = touchCenterLocation!
+        //layoutSubviews()
         UIView.animate(withDuration: 0.1, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
             self.rippleBackgroundView.alpha = 1
             }, completion: {(success: Bool) -> () in
@@ -168,7 +186,7 @@ public class ZFRippleButton: UIButton {
         })
         
         
-        UIView.animate(withDuration: 0.7, delay: 0,
+        UIView.animate(withDuration: 0.5, delay: 0,
                        options: [.curveEaseOut, .beginFromCurrentState, .allowUserInteraction],
             animations: {
                 self.rippleView.transform = CGAffineTransformIdentity
@@ -180,7 +198,7 @@ public class ZFRippleButton: UIButton {
                 opacityAnim.toValue = self.tempShadowOpacity
                 
                 let groupAnim = CAAnimationGroup()
-                groupAnim.duration = 0.7
+                groupAnim.duration = 0.5
             groupAnim.fillMode = CAMediaTimingFillMode.forwards
             groupAnim.isRemovedOnCompletion = false
                 groupAnim.animations = [shadowAnim, opacityAnim]
@@ -189,7 +207,9 @@ public class ZFRippleButton: UIButton {
             }, completion: nil)
     }
     
+
     override public func layoutSubviews() {
+
         super.layoutSubviews()
         
         setupRippleView()

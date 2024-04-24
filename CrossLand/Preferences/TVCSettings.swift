@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 var prefSettingsHideDeveloperSettings = true
 
@@ -22,12 +23,13 @@ var prefSettingsHideDeveloperSettings = true
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.section == tableView.numberOfSections - 1 && prefSettingsHideDeveloperSettings {
             cell.isHidden = true
         }
     }
+    
+    
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == tableView.numberOfSections - 1 && prefSettingsHideDeveloperSettings {
@@ -54,6 +56,7 @@ var prefSettingsHideDeveloperSettings = true
     }
 
     
+
 
     @IBAction func switchPresentDebugView(_ sender: Any) {
         print("toggled!")

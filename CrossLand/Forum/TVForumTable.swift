@@ -16,7 +16,6 @@ class TVCForumTable: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("test")
         let cell = tableView.dequeueReusableCell(withIdentifier: "groupButton", for: indexPath)
         return cell
     }
@@ -51,13 +50,13 @@ class TVButtonCellGroup: UITableViewCell {
         }
     }
     var statusNotice = false
-    @IBAction func btnNotice(_ sender: TRForumCellButton) {
+    @IBAction func btnNotice(_ sender: TRRippleButton) {
         statusNotice = !statusNotice
         sender.active(statusNotice)
     }
     
     var statusPost = false
-    @IBAction func btnPost(_ sender: TRForumCellButton) {
+    @IBAction func btnPost(_ sender: TRRippleButton) {
         statusPost = !statusPost
         sender.active(statusPost)
     }

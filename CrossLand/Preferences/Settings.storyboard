@@ -21,21 +21,20 @@
                         <sections>
                             <tableViewSection headerTitle="用户管理" footerTitle="登录 X 岛用户系统后，CrossLand 将导入你所有的饼干并将信息妥善保存至 iCloud 钥匙串中。" id="8n3-ve-zpn">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="9IM-G7-gCX" style="IBUITableViewCellStyleDefault" id="fzi-az-zVo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="DWh-5y-245" style="IBUITableViewCellStyleDefault" id="fzi-az-zVo" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="49.5" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fzi-az-zVo" id="r0h-3R-ixk">
-                                            <rect key="frame" x="0.0" y="0.0" width="354" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="登录 X 岛" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="9IM-G7-gCX">
-                                                    <rect key="frame" x="16" y="0.0" width="322" height="43.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="X 岛用户登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="DWh-5y-245">
+                                                    <rect key="frame" x="16" y="0.0" width="304" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" systemColor="tintColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="drawColorTintColor" value="NO"/>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="drawColorTint" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
@@ -50,7 +49,7 @@
                             </tableViewSection>
                             <tableViewSection footerTitle="在此可以通过二维码添加饼干。" id="El6-1e-fyW">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fkF-BN-6qT" style="IBUITableViewCellStyleDefault" id="WTb-IV-mxE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fkF-BN-6qT" style="IBUITableViewCellStyleDefault" id="WTb-IV-mxE" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="151.5" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WTb-IV-mxE" id="RPv-s4-fpT">
@@ -72,7 +71,7 @@
                             </tableViewSection>
                             <tableViewSection footerTitle="此屏蔽列表仅在 CrossLand 应用中共享。" id="YBw-dU-lGD">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Qg4-pk-js9" style="IBUITableViewCellStyleDefault" id="8uV-0j-zNb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Qg4-pk-js9" style="IBUITableViewCellStyleDefault" id="8uV-0j-zNb" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="239.5" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8uV-0j-zNb" id="M8y-8e-7aM">
@@ -96,7 +95,7 @@
                                 <string key="footerTitle">不仅是界面改变，部分操作方式也会发生变化。
 此设定需要重启软件后生效。</string>
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="5fD-jc-69Y" style="IBUITableViewCellStyleDefault" id="KAg-oz-VzY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="5fD-jc-69Y" style="IBUITableViewCellStyleDefault" id="KAg-oz-VzY" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="349" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KAg-oz-VzY" id="ytC-vz-oKo">
@@ -114,7 +113,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="fTo-gI-5bc" detailTextLabel="UAw-5e-gjR" style="IBUITableViewCellStyleSubtitle" id="8TG-tz-G54">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="fTo-gI-5bc" detailTextLabel="UAw-5e-gjR" style="IBUITableViewCellStyleSubtitle" id="8TG-tz-G54" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="392.5" width="354" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8TG-tz-G54" id="3HX-gR-fi6">
@@ -143,7 +142,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="浏览" id="Kds-dB-goJ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KlW-w4-1rW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KlW-w4-1rW" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="520.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KlW-w4-1rW" id="VIY-GZ-aAr">
@@ -171,7 +170,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Wzw-Nk-u1g">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Wzw-Nk-u1g" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="562.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wzw-Nk-u1g" id="l8e-Xs-Erx">
@@ -205,7 +204,7 @@
                                 <string key="footerTitle">登录了此 Apple ID 的设备（iPhone、iPad、Mac）将共享 CrossLand 的账号信息。
 此功能基于 iCloud 钥匙串同步实现，TRIStudio 及第三方无法获知你的个人信息。</string>
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DLc-gd-lzJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DLc-gd-lzJ" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="662" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DLc-gd-lzJ" id="qcV-Q4-Rd3">
@@ -237,7 +236,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="本地数据库" footerTitle="基于浏览的的数据缓存来进行搜索。开启后软件的搜索功能将可用，但仅能搜索到已缓存的信息。" id="QVO-3Q-9Ie">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vxc-lQ-rZF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vxc-lQ-rZF" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="812" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vxc-lQ-rZF" id="yVS-gb-KRL">
@@ -269,7 +268,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="推送" footerTitle="打开后台刷新以取得更好的消息推送体验，此推送功能并非实时推送。" id="igV-KF-mmy">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CAE-Ib-nF9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CAE-Ib-nF9" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="934" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CAE-Ib-nF9" id="5Jr-oL-xrT">
@@ -301,7 +300,7 @@
                             </tableViewSection>
                             <tableViewSection id="gZQ-YC-zK7">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="agG-mp-ncZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="agG-mp-ncZ" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1034.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="agG-mp-ncZ" id="c35-Bm-RXl">
@@ -329,7 +328,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Phd-aY-EA1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Phd-aY-EA1" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1076.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Phd-aY-EA1" id="Iow-3p-cqE">
@@ -357,7 +356,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GKJ-uQ-iuK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GKJ-uQ-iuK" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1118.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GKJ-uQ-iuK" id="Zve-Xv-Xx1">
@@ -389,7 +388,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="数据清理" id="sEf-7H-Ky2">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fqb-rt-SWl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fqb-rt-SWl" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1210.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fqb-rt-SWl" id="cw5-Bf-Ydr">
@@ -420,7 +419,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kge-bz-G51">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kge-bz-G51" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1252.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kge-bz-G51" id="i0S-QD-72g">
@@ -451,7 +450,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="745-hf-xqr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="745-hf-xqr" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1294.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="745-hf-xqr" id="puD-vu-g3f">
@@ -478,7 +477,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="支持" id="1TS-IE-yIf">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="K7F-UK-5xd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="K7F-UK-5xd" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1386.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K7F-UK-5xd" id="DlO-Io-xyt">
@@ -509,7 +508,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="CU8-Y2-Mz4" style="IBUITableViewCellStyleDefault" id="I9K-Gr-hX7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="CU8-Y2-Mz4" style="IBUITableViewCellStyleDefault" id="I9K-Gr-hX7" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1428.5" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I9K-Gr-hX7" id="aJ3-Es-rvS">
@@ -527,7 +526,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Lcu-Qb-VSn" style="IBUITableViewCellStyleDefault" id="tzf-rS-6pK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Lcu-Qb-VSn" style="IBUITableViewCellStyleDefault" id="tzf-rS-6pK" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1472" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tzf-rS-6pK" id="uKV-ad-cGJ">
@@ -545,7 +544,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="a35-Dv-XOb" style="IBUITableViewCellStyleDefault" id="pmJ-pN-v2c">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="a35-Dv-XOb" style="IBUITableViewCellStyleDefault" id="pmJ-pN-v2c" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1515.5" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pmJ-pN-v2c" id="RpQ-tN-cXr">
@@ -563,7 +562,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fNA-De-Pb5" style="IBUITableViewCellStyleDefault" id="6MA-cH-Nqs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="fNA-De-Pb5" style="IBUITableViewCellStyleDefault" id="6MA-cH-Nqs" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1559" width="354" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6MA-cH-Nqs" id="iOc-9q-DnH">
@@ -585,7 +584,7 @@
                             </tableViewSection>
                             <tableViewSection id="1HI-Gv-kaz">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Si6-5g-9GC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Si6-5g-9GC" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1638.5" width="354" height="42"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Si6-5g-9GC" id="9oq-JF-hAw">
@@ -626,13 +625,10 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <size key="freeformSize" width="386" height="1871"/>
-                    <connections>
-                        <outlet property="lbLogin" destination="9IM-G7-gCX" id="kaE-nH-TAJ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35S-7U-mdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1160.625" y="89.788732394366193"/>
+            <point key="canvasLocation" x="1160.625" y="89.260563380281695"/>
         </scene>
         <!--用户登录-->
         <scene sceneID="W7K-UC-Lh4">
@@ -723,9 +719,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*****" textAlignment="right" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TDb-c1-Sy7">
-                                                    <rect key="frame" x="75" y="11" width="197" height="20"/>
+                                                    <rect key="frame" x="75" y="10.5" width="197" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="password"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -775,7 +771,7 @@
                             </tableViewSection>
                             <tableViewSection footerTitle="登录代表你同意 CrossLand 用户协议与隐私条款。" id="tGC-gh-nCb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="yXE-1L-e5l" style="IBUITableViewCellStyleDefault" id="7eT-Uf-oNr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="yXE-1L-e5l" style="IBUITableViewCellStyleDefault" id="7eT-Uf-oNr" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="312" width="288" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7eT-Uf-oNr" id="EpR-bX-uyb">
@@ -801,7 +797,7 @@
                             </tableViewSection>
                             <tableViewSection id="ktJ-5x-CcN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Kpy-Jm-0ZE" style="IBUITableViewCellStyleDefault" id="moz-n5-RnY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Kpy-Jm-0ZE" style="IBUITableViewCellStyleDefault" id="moz-n5-RnY" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="414" width="288" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="moz-n5-RnY" id="4ua-ll-mrB">
@@ -823,7 +819,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ols-XQ-rro" style="IBUITableViewCellStyleDefault" id="guw-LP-9FY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Ols-XQ-rro" style="IBUITableViewCellStyleDefault" id="guw-LP-9FY" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="457.5" width="288" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="guw-LP-9FY" id="5dd-00-2S0">
@@ -845,7 +841,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LnQ-2x-t0N" style="IBUITableViewCellStyleDefault" id="km0-V3-nBl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LnQ-2x-t0N" style="IBUITableViewCellStyleDefault" id="km0-V3-nBl" customClass="TRRippleCell" customModule="CrossLand" customModuleProvider="target">
                                         <rect key="frame" x="16" y="501" width="288" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="km0-V3-nBl" id="fiU-mv-snq">
@@ -894,7 +890,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rbu-N4-Pri" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" backIndicatorTransitionMaskImage="arrow.backward" catalog="system" id="apx-05-27V">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" backIndicatorTransitionMaskImage="arrow_back" id="apx-05-27V">
                         <rect key="frame" x="0.0" y="20" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -908,7 +904,7 @@
                             <color key="textColor" systemColor="labelColor"/>
                             <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
-                        <imageReference key="backIndicatorImage" image="arrow.backward" catalog="system" symbolScale="medium"/>
+                        <imageReference key="backIndicatorImage" image="arrow_back" symbolScale="medium"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -921,24 +917,24 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="arrow_back" width="24" height="24"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

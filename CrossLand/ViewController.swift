@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class ViewController: UIViewController {
     
@@ -14,11 +15,13 @@ class ViewController: UIViewController {
     let sbFirstGuide = UIStoryboard(name: "FirstGuide", bundle: Bundle.main)
     let sbKeyboard = UIStoryboard(name: "Keyboard", bundle: Bundle.main)
     let sbForum = UIStoryboard(name: "Forum", bundle: Bundle.main)
+    let sbImageV = UIStoryboard(name: "ImageV", bundle: Bundle.main)
     var vcSettings: UIViewController? = nil
     var vcForumMain: UIViewController? = nil
     var vcFirst: UIViewController? = nil
     var vcKeyboard: UIViewController? = nil
     var vcForumTable: UIViewController? = nil
+    var vcImageV: VCImageViewer? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +29,17 @@ class ViewController: UIViewController {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
         UINavigationBar.appearance().shadowImage = UIImage()
         
+        
+        
+        imageLite.clickedResponse = { [self] in
+            self.vcImageV = self.sbImageV.instantiateInitialViewController()
+            self.vcImageV?.modalPresentationStyle = .overFullScreen
+            self.vcImageV?.placeHolderImage = UIImage(named: "picDemoPlaceholder")
+            self.present(vcImageV!, animated: true)
+        }
     }
+    
+    @IBOutlet weak var imageLite: TRImageLite!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -37,13 +50,20 @@ class ViewController: UIViewController {
         //self.present(vcFirst!, animated: true)
         
         vcSettings = sbSettings.instantiateInitialViewController()
-        self.present(vcSettings!, animated: true)
+        //self.present(vcSettings!, animated: true)
         vcForumMain = sbMainForum.instantiateInitialViewController()
         //self.present(vcForumMain!, animated: true)
         vcForumTable = sbForum.instantiateInitialViewController()
         //self.present(vcForumTable!, animated: true)
+        
+        vcImageV = sbImageV.instantiateInitialViewController()
+        
+        
+        //self.present(vcImageV!, animated: true)
     }
 
-
+    
+    
+    
 }
 

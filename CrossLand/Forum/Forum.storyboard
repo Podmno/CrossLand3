@@ -28,27 +28,27 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xuo-Fx-wvj">
                                             <rect key="frame" x="16" y="6" width="712" height="48"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX9-zd-7l9" customClass="TRForumCellButton" customModule="CrossLand" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX9-zd-7l9" customClass="TRRippleButton" customModule="CrossLand" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="348" height="48"/>
                                                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="   版面公告">
                                                         <color key="titleColor" systemColor="tintColor"/>
-                                                        <imageReference key="image" image="exclamationmark.triangle.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                                        <imageReference key="image" image="feedback" symbolScale="large" renderingMode="template"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="btnNotice:" destination="ryu-56-qm2" eventType="touchUpInside" id="Gpr-AC-pbO"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nM-CK-nxQ" customClass="TRForumCellButton" customModule="CrossLand" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nM-CK-nxQ" customClass="TRRippleButton" customModule="CrossLand" customModuleProvider="target">
                                                     <rect key="frame" x="364" y="0.0" width="348" height="48"/>
                                                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" title="   发串">
                                                         <color key="titleColor" systemColor="tintColor"/>
-                                                        <imageReference key="image" image="pencil.line" catalog="system" symbolScale="large" renderingMode="template"/>
+                                                        <imageReference key="image" image="edit_square" symbolScale="large" renderingMode="template"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="btnPost:" destination="ryu-56-qm2" eventType="touchUpInside" id="Zbp-nP-ulf"/>
@@ -84,23 +84,23 @@
     </scenes>
     <designables>
         <designable name="2nM-CK-nxQ">
-            <size key="intrinsicContentSize" width="73" height="24.5"/>
+            <size key="intrinsicContentSize" width="72" height="24"/>
         </designable>
         <designable name="QX9-zd-7l9">
-            <size key="intrinsicContentSize" width="109.5" height="24.5"/>
+            <size key="intrinsicContentSize" width="107" height="24"/>
         </designable>
     </designables>
     <resources>
-        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
-        <image name="pencil.line" catalog="system" width="128" height="117"/>
+        <image name="edit_square" width="24" height="24"/>
+        <image name="feedback" width="24" height="24"/>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

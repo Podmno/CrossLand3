@@ -1,33 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Image Viewer-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="VCImageViewer" customModule="CrossLand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXC-8U-be7" customClass="PanZoomImageView" customModule="CrossLand" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </containerView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-qG-kdN">
+                                <rect key="frame" x="0.0" y="756" width="375" height="56"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Z9S-Q2-Kuy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm1-EX-06A">
+                                            <rect key="frame" x="311" y="-4" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="OVt-bs-3hj"/>
+                                                <constraint firstAttribute="width" constant="48" id="nAD-0O-9hH"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="close" title=" "/>
+                                            <connections>
+                                                <action selector="closeDemo:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4DG-r2-Bwn"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8U-KQ-0bN">
+                                            <rect key="frame" x="163.66666666666666" y="-4" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="MCo-JF-Beo"/>
+                                                <constraint firstAttribute="width" constant="48" id="wGy-Fj-LUo"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="ios_share" title=" "/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Gm1-EX-06A" secondAttribute="trailing" constant="16" id="AT8-gb-RRz"/>
+                                        <constraint firstAttribute="bottom" secondItem="r8U-KQ-0bN" secondAttribute="bottom" constant="12" id="AgT-g2-RP2"/>
+                                        <constraint firstAttribute="bottom" secondItem="Gm1-EX-06A" secondAttribute="bottom" constant="12" id="IWx-RM-AFl"/>
+                                        <constraint firstItem="r8U-KQ-0bN" firstAttribute="centerX" secondItem="Z9S-Q2-Kuy" secondAttribute="centerX" id="v3x-Ex-XlX"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="26Q-eV-hUu"/>
+                                </constraints>
+                                <blurEffect style="systemUltraThinMaterialDark"/>
+                            </visualEffectView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tXC-8U-be7" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="0vL-3z-Yrv"/>
+                            <constraint firstAttribute="bottom" secondItem="tdE-qG-kdN" secondAttribute="bottom" id="2P0-eh-34i"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tdE-qG-kdN" secondAttribute="trailing" id="9f1-m7-PmH"/>
+                            <constraint firstAttribute="trailing" secondItem="tXC-8U-be7" secondAttribute="trailing" id="Tom-4I-kfO"/>
+                            <constraint firstAttribute="bottom" secondItem="tXC-8U-be7" secondAttribute="bottom" id="kzz-kh-TMC"/>
+                            <constraint firstItem="tdE-qG-kdN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nIR-dz-WFv"/>
+                            <constraint firstItem="tXC-8U-be7" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="wAw-Wx-npH"/>
+                        </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="panImageView" destination="tXC-8U-be7" id="0MH-qK-Bhc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="ddL-Ke-yhj">
+                    <connections>
+                        <action selector="userSwipeDown:" destination="Y6W-OH-hqX" id="ajU-Ti-ocM"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="133.59999999999999" y="4.4334975369458132"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="close" width="24" height="24"/>
+        <image name="ios_share" width="24" height="24"/>
     </resources>
 </document>

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D7A1F6E2BD6AAB6006D01AF /* TRForumCellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A1F6D2BD6AAB6006D01AF /* TRForumCellButton.swift */; };
-		5D7A1F702BD6C3EB006D01AF /* TRCommonRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A1F6F2BD6C3EB006D01AF /* TRCommonRippleButton.swift */; };
+		5D47B78E2BD7F92D004C0EA7 /* VCImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D47B78D2BD7F92D004C0EA7 /* VCImageViewer.swift */; };
+		5D47B7912BD7F976004C0EA7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5D47B7902BD7F976004C0EA7 /* Alamofire */; };
+		5D47B7942BD7F98A004C0EA7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5D47B7932BD7F98A004C0EA7 /* SwiftyJSON */; };
+		5D7A1F702BD6C3EB006D01AF /* TRRippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7A1F6F2BD6C3EB006D01AF /* TRRippleView.swift */; };
 		5D88ABAD2BD4B46A00347521 /* FirstGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D88ABAC2BD4B46A00347521 /* FirstGuide.storyboard */; };
+		5D9380532BD73E5300CB938A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9380522BD73E5300CB938A /* SnapKit */; };
 		5D9D9F872BD6390E001BC769 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9D9F862BD6390E001BC769 /* Hero */; };
 		5D9D9F892BD63FF3001BC769 /* ImageV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D9F882BD63FF3001BC769 /* ImageV.storyboard */; };
 		5D9D9F8B2BD6650F001BC769 /* VCFirstLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D9F8A2BD6650F001BC769 /* VCFirstLogin.swift */; };
@@ -31,6 +34,7 @@
 		5DD4D8BD2BD27BFD001D8D17 /* TRDynamicFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */; };
 		5DD4D8C02BD28E5A001D8D17 /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */; };
 		5DD4D8C22BD29211001D8D17 /* TVCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */; };
+		5DEFBDA42BD8952400AA0EA0 /* TRImageLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA32BD8952400AA0EA0 /* TRImageLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D7A1F6D2BD6AAB6006D01AF /* TRForumCellButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRForumCellButton.swift; sourceTree = "<group>"; };
-		5D7A1F6F2BD6C3EB006D01AF /* TRCommonRippleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRCommonRippleButton.swift; sourceTree = "<group>"; };
+		5D47B78D2BD7F92D004C0EA7 /* VCImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCImageViewer.swift; sourceTree = "<group>"; };
+		5D7A1F6F2BD6C3EB006D01AF /* TRRippleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRRippleView.swift; sourceTree = "<group>"; };
 		5D88ABAC2BD4B46A00347521 /* FirstGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstGuide.storyboard; sourceTree = "<group>"; };
 		5D8D639E2BD4BE9D005AA8ED /* EULAPrivacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EULAPrivacy.md; sourceTree = "<group>"; };
 		5D9D9F802BD61B4C001BC769 /* Acknowledgement.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Acknowledgement.md; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRDynamicFont.swift; sourceTree = "<group>"; };
 		5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
 		5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCLogin.swift; sourceTree = "<group>"; };
+		5DEFBDA32BD8952400AA0EA0 /* TRImageLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRImageLite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D47B7912BD7F976004C0EA7 /* Alamofire in Frameworks */,
 				5D9D9F872BD6390E001BC769 /* Hero in Frameworks */,
+				5D47B7942BD7F98A004C0EA7 /* SwiftyJSON in Frameworks */,
+				5D9380532BD73E5300CB938A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				5D9D9F882BD63FF3001BC769 /* ImageV.storyboard */,
+				5D47B78D2BD7F92D004C0EA7 /* VCImageViewer.swift */,
+				5DEFBDA32BD8952400AA0EA0 /* TRImageLite.swift */,
 			);
 			path = ImageV;
 			sourceTree = "<group>";
@@ -138,8 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				5D9D9F902BD67F14001BC769 /* ZFRippleButton.swift */,
-				5D7A1F6D2BD6AAB6006D01AF /* TRForumCellButton.swift */,
-				5D7A1F6F2BD6C3EB006D01AF /* TRCommonRippleButton.swift */,
+				5D7A1F6F2BD6C3EB006D01AF /* TRRippleView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -267,6 +276,9 @@
 			name = CrossLand;
 			packageProductDependencies = (
 				5D9D9F862BD6390E001BC769 /* Hero */,
+				5D9380522BD73E5300CB938A /* SnapKit */,
+				5D47B7902BD7F976004C0EA7 /* Alamofire */,
+				5D47B7932BD7F98A004C0EA7 /* SwiftyJSON */,
 			);
 			productName = CrossLand;
 			productReference = 5DA62A362BD1FE35000D7F65 /* CrossLand.app */;
@@ -342,6 +354,9 @@
 			mainGroup = 5DA62A2D2BD1FE35000D7F65;
 			packageReferences = (
 				5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */,
+				5D9380512BD73E5300CB938A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5D47B78F2BD7F976004C0EA7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5D47B7922BD7F98A004C0EA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 5DA62A372BD1FE35000D7F65 /* Products */;
 			projectDirPath = "";
@@ -391,14 +406,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7A1F702BD6C3EB006D01AF /* TRCommonRippleButton.swift in Sources */,
+				5D7A1F702BD6C3EB006D01AF /* TRRippleView.swift in Sources */,
 				5DD4D8BD2BD27BFD001D8D17 /* TRDynamicFont.swift in Sources */,
 				5DA62A3E2BD1FE35000D7F65 /* ViewController.swift in Sources */,
 				5DCA438A2BD5FA8700201601 /* VCEmoticonInput2.swift in Sources */,
+				5D47B78E2BD7F92D004C0EA7 /* VCImageViewer.swift in Sources */,
 				5DA62A3A2BD1FE35000D7F65 /* AppDelegate.swift in Sources */,
 				5DD4D8C22BD29211001D8D17 /* TVCLogin.swift in Sources */,
+				5DEFBDA42BD8952400AA0EA0 /* TRImageLite.swift in Sources */,
 				5DA62A722BD20C94000D7F65 /* TVCSettings.swift in Sources */,
-				5D7A1F6E2BD6AAB6006D01AF /* TRForumCellButton.swift in Sources */,
 				5D9D9F932BD69519001BC769 /* TVForumTable.swift in Sources */,
 				5D9D9F912BD681D9001BC769 /* ZFRippleButton.swift in Sources */,
 				5DA62A3C2BD1FE35000D7F65 /* SceneDelegate.swift in Sources */,
@@ -587,6 +603,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FXSVDYCN2P;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrossLand/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -622,6 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FXSVDYCN2P;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrossLand/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
@@ -761,6 +779,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5D47B78F2BD7F976004C0EA7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		5D47B7922BD7F98A004C0EA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		5D9380512BD73E5300CB938A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
@@ -772,6 +814,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5D47B7902BD7F976004C0EA7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D47B78F2BD7F976004C0EA7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5D47B7932BD7F98A004C0EA7 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D47B7922BD7F98A004C0EA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		5D9380522BD73E5300CB938A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D9380512BD73E5300CB938A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		5D9D9F862BD6390E001BC769 /* Hero */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */;
