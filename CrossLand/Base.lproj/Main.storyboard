@@ -16,29 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-FQ-dpe" customClass="TRImageLite" customModule="CrossLand" customModuleProvider="target">
-                                <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="9Ee-Fa-grR"/>
-                                    <constraint firstAttribute="height" constant="128" id="TAe-WY-og2"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Cae-FQ-dpe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jkO-to-gM4"/>
-                            <constraint firstItem="Cae-FQ-dpe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kMg-iP-4ri"/>
-                        </constraints>
                     </view>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="imageLite" destination="Cae-FQ-dpe" id="B9b-Cw-uWV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

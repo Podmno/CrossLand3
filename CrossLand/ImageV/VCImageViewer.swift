@@ -8,7 +8,6 @@
 import UIKit
 import SnapKit
 import Alamofire
-import Hero
 
 let demoPictureAddress = "https://www.pokemon.co.jp/special/dungeon_sora/common/img/main.jpg"
 
@@ -17,6 +16,7 @@ class VCImageViewer: UIViewController {
     @IBOutlet weak var panImageView: PanZoomImageView!
 
     
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     //@IBOutlet weak var blurLayer: UIVisualEffectView!
     var placeHolderImage: UIImage? = nil
     
@@ -30,13 +30,20 @@ class VCImageViewer: UIViewController {
         self.panImageView.imageView.image = placeHolderImage
 
         
-        NotificationCenter.default.addObserver(self, selector: #selector(receiveViewControllerClose), name: Notification.Name("pictureExit"), object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(receiveViewControllerClose), name: Notification.Name("pictureExit"), object: nil)
     }
     
-
+    var pictureLoaded = false
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
+        
+        if (pictureLoaded) {
+            return
+        }
+        
+        self.loading.isHidden = false
+        self.loading.startAnimating()
         AF.request(demoPictureAddress).response { re in
             if re.error == nil {
                 print("Load Image")
@@ -46,10 +53,17 @@ class VCImageViewer: UIViewController {
                     let data = re.data
                     let image = UIImage(data: data ?? Data())
                     self.panImageView.imageView.image = image
-                    
+                    self.loading.isHidden = true
+                    self.pictureLoaded = true
                 }
             } else {
                 print("error")
+                let broken_image = UIImage(named: "broken_image")
+                self.panImageView.imageView.contentMode = .center
+                self.panImageView.imageView.image = broken_image
+                self.panImageView.imageView.tintColor = .white
+                self.loading.isHidden = true
+                self.pictureLoaded = true
             }
         }
     }
@@ -62,6 +76,20 @@ class VCImageViewer: UIViewController {
         self.dismiss(animated: true)
     }
     
+    
+    
+    @IBAction func toogleShareMenu(_ sender: Any) {
+        let image = self.panImageView.imageView.image
+        if (image == nil) {
+            return
+        }
+        
+        //let picWebsite = NSURL(string: demoPictureAddress)
+
+        let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activity.popoverPresentationController?.sourceView = self.view
+        self.present(activity, animated: true)
+    }
 
 }
 
@@ -71,7 +99,7 @@ class PanZoomImageView: UIScrollView {
     
     @IBInspectable private var imageName: String? {
         didSet {
-            imageView.heroID = "placeHolderImage"
+            //imageView.heroID = "placeHolderImage"
 
             guard let imageName = imageName else {
                 return
@@ -117,9 +145,9 @@ class PanZoomImageView: UIScrollView {
         doubleTapRecognizer.numberOfTapsRequired = 2
         addGestureRecognizer(doubleTapRecognizer)
         
-        let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeDown(_:)))
-        swipeRecognizer.direction = .down
-        addGestureRecognizer(swipeRecognizer)
+        //let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeDown(_:)))
+        //swipeRecognizer.direction = .down
+        //addGestureRecognizer(swipeRecognizer)
     }
     
     @objc private func handleDoubleTap(_ sender: UITapGestureRecognizer) {

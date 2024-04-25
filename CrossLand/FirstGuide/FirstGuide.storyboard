@@ -222,12 +222,68 @@
             </objects>
             <point key="canvasLocation" x="140" y="676"/>
         </scene>
+        <!--选择饼干-->
+        <scene sceneID="yCQ-2K-YiK">
+            <objects>
+                <viewController title="选择饼干" id="jtq-rf-G7f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Unx-Ra-17K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择要使用的饼干" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twh-Cf-bZI">
+                                <rect key="frame" x="24" y="70" width="345" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicLightFontStyle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部分版面需要使用饼干才能访问。" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwN-3i-73Z">
+                                <rect key="frame" x="24" y="113.66666666666667" width="345" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytf-rM-fO8" customClass="TRCommonRippleButton" customModule="CrossLand" customModuleProvider="target">
+                                <rect key="frame" x="24" y="751" width="345" height="51"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="继续" buttonSize="large">
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Wq-V1-2xo">
+                                <rect key="frame" x="24" y="708" width="345" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="不使用饼干"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B2e-RP-eUQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jwN-3i-73Z" firstAttribute="top" secondItem="twh-Cf-bZI" secondAttribute="bottom" constant="10" id="3h5-fx-LY1"/>
+                            <constraint firstItem="B2e-RP-eUQ" firstAttribute="trailing" secondItem="5Wq-V1-2xo" secondAttribute="trailing" constant="24" id="45n-o7-NQt"/>
+                            <constraint firstItem="twh-Cf-bZI" firstAttribute="top" secondItem="Unx-Ra-17K" secondAttribute="top" constant="70" id="5lD-hb-Azc"/>
+                            <constraint firstAttribute="trailing" secondItem="jwN-3i-73Z" secondAttribute="trailing" constant="24" id="7Ev-dh-zgW"/>
+                            <constraint firstItem="B2e-RP-eUQ" firstAttribute="trailing" secondItem="Ytf-rM-fO8" secondAttribute="trailing" constant="24" id="EDr-uQ-9q1"/>
+                            <constraint firstAttribute="trailing" secondItem="twh-Cf-bZI" secondAttribute="trailing" constant="24" id="LfX-4t-msT"/>
+                            <constraint firstItem="Ytf-rM-fO8" firstAttribute="leading" secondItem="B2e-RP-eUQ" secondAttribute="leading" constant="24" id="TOS-s6-jrM"/>
+                            <constraint firstItem="Ytf-rM-fO8" firstAttribute="top" secondItem="5Wq-V1-2xo" secondAttribute="bottom" constant="8" id="gEg-wH-agz"/>
+                            <constraint firstItem="B2e-RP-eUQ" firstAttribute="bottom" secondItem="Ytf-rM-fO8" secondAttribute="bottom" constant="16" id="qYZ-4E-Drj"/>
+                            <constraint firstItem="twh-Cf-bZI" firstAttribute="leading" secondItem="Unx-Ra-17K" secondAttribute="leading" constant="24" id="qjr-dU-CeH"/>
+                            <constraint firstItem="jwN-3i-73Z" firstAttribute="leading" secondItem="Unx-Ra-17K" secondAttribute="leading" constant="24" id="sFO-W1-kW0"/>
+                            <constraint firstItem="5Wq-V1-2xo" firstAttribute="leading" secondItem="B2e-RP-eUQ" secondAttribute="leading" constant="24" id="vlw-FG-sbM"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="852"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwj-Xg-tOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.53435114503816" y="4.9295774647887329"/>
+        </scene>
     </scenes>
-    <designables>
-        <designable name="2um-g5-QiO">
-            <size key="intrinsicContentSize" width="74.666666666666671" height="50.333333333333336"/>
-        </designable>
-    </designables>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

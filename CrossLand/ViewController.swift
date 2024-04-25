@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Hero
+//import Hero
 
 class ViewController: UIViewController {
     
@@ -31,15 +31,14 @@ class ViewController: UIViewController {
         
         
         
-        imageLite.clickedResponse = { [self] in
-            self.vcImageV = self.sbImageV.instantiateInitialViewController()
-            self.vcImageV?.modalPresentationStyle = .overFullScreen
-            self.vcImageV?.placeHolderImage = UIImage(named: "picDemoPlaceholder")
-            self.present(vcImageV!, animated: true)
-        }
+//        imageLite.clickedResponse = { [self] in
+//            self.vcImageV = self.sbImageV.instantiateInitialViewController()
+//            self.vcImageV?.placeHolderImage = UIImage(named: "picDemoPlaceholder")
+//            self.present(vcImageV!, animated: true)
+//        }
     }
     
-    @IBOutlet weak var imageLite: TRImageLite!
+
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -54,9 +53,10 @@ class ViewController: UIViewController {
         vcForumMain = sbMainForum.instantiateInitialViewController()
         //self.present(vcForumMain!, animated: true)
         vcForumTable = sbForum.instantiateInitialViewController()
-        //self.present(vcForumTable!, animated: true)
+        vcForumTable?.modalPresentationStyle = .overCurrentContext
+        self.present(vcForumTable!, animated: true)
         
-        vcImageV = sbImageV.instantiateInitialViewController()
+        //vcImageV = sbImageV.instantiateInitialViewController()
         
         
         //self.present(vcImageV!, animated: true)

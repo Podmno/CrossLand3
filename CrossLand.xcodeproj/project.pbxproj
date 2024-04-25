@@ -29,12 +29,26 @@
 		5DA62A5D2BD1FE39000D7F65 /* CrossLandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A5C2BD1FE39000D7F65 /* CrossLandUITestsLaunchTests.swift */; };
 		5DA62A702BD205C7000D7F65 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA62A6F2BD205C7000D7F65 /* Settings.storyboard */; };
 		5DA62A722BD20C94000D7F65 /* TVCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA62A712BD20C94000D7F65 /* TVCSettings.swift */; };
+		5DACBA012BD9D99600DD4D7C /* TRRegexTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DACBA002BD9D99600DD4D7C /* TRRegexTool.swift */; };
+		5DACBA042BDA13C100DD4D7C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5DACBA032BDA13C100DD4D7C /* AlamofireImage */; };
 		5DCA438A2BD5FA8700201601 /* VCEmoticonInput2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA43872BD5FA8700201601 /* VCEmoticonInput2.swift */; };
 		5DCA438C2BD5FB1500201601 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCA438B2BD5FB1500201601 /* Keyboard.storyboard */; };
 		5DD4D8BD2BD27BFD001D8D17 /* TRDynamicFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */; };
 		5DD4D8C02BD28E5A001D8D17 /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */; };
 		5DD4D8C22BD29211001D8D17 /* TVCLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */; };
 		5DEFBDA42BD8952400AA0EA0 /* TRImageLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA32BD8952400AA0EA0 /* TRImageLite.swift */; };
+		5DEFBDAD2BD8D02600AA0EA0 /* LCDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA52BD8D02300AA0EA0 /* LCDemo.swift */; };
+		5DEFBDAE2BD8D02600AA0EA0 /* LCParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA62BD8D02400AA0EA0 /* LCParser.swift */; };
+		5DEFBDAF2BD8D02600AA0EA0 /* LGUserManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA72BD8D02400AA0EA0 /* LGUserManage.swift */; };
+		5DEFBDB02BD8D02600AA0EA0 /* LCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA82BD8D02500AA0EA0 /* LCAPI.swift */; };
+		5DEFBDB12BD8D02600AA0EA0 /* LCStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDA92BD8D02500AA0EA0 /* LCStruct.swift */; };
+		5DEFBDB22BD8D02600AA0EA0 /* LCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDAA2BD8D02600AA0EA0 /* LCRequest.swift */; };
+		5DEFBDB32BD8D02600AA0EA0 /* LCStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDAB2BD8D02600AA0EA0 /* LCStorage.swift */; };
+		5DEFBDB42BD8D02600AA0EA0 /* LCDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDAC2BD8D02600AA0EA0 /* LCDefaults.swift */; };
+		5DEFBDB72BD8D06800AA0EA0 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEFBDB62BD8D06800AA0EA0 /* SQLite */; };
+		5DEFBDB92BD8D35B00AA0EA0 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDB82BD8D35B00AA0EA0 /* MarqueeLabel.swift */; };
+		5DEFBDBB2BD93ABF00AA0EA0 /* LCForumHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFBDBA2BD93ABF00AA0EA0 /* LCForumHTML.swift */; };
+		5DEFBDC12BD94F8600AA0EA0 /* ZMarkupParser in Frameworks */ = {isa = PBXBuildFile; productRef = 5DEFBDC02BD94F8600AA0EA0 /* ZMarkupParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +94,23 @@
 		5DA62A692BD1FE48000D7F65 /* CrossLand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrossLand.entitlements; sourceTree = "<group>"; };
 		5DA62A6F2BD205C7000D7F65 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		5DA62A712BD20C94000D7F65 /* TVCSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCSettings.swift; sourceTree = "<group>"; };
+		5DACBA002BD9D99600DD4D7C /* TRRegexTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRRegexTool.swift; sourceTree = "<group>"; };
 		5DCA43872BD5FA8700201601 /* VCEmoticonInput2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCEmoticonInput2.swift; sourceTree = "<group>"; };
 		5DCA438B2BD5FB1500201601 /* Keyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		5DD4D8BC2BD27BFD001D8D17 /* TRDynamicFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRDynamicFont.swift; sourceTree = "<group>"; };
 		5DD4D8BF2BD28E5A001D8D17 /* Forum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
 		5DD4D8C12BD29210001D8D17 /* TVCLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCLogin.swift; sourceTree = "<group>"; };
 		5DEFBDA32BD8952400AA0EA0 /* TRImageLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRImageLite.swift; sourceTree = "<group>"; };
+		5DEFBDA52BD8D02300AA0EA0 /* LCDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDemo.swift; sourceTree = "<group>"; };
+		5DEFBDA62BD8D02400AA0EA0 /* LCParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCParser.swift; sourceTree = "<group>"; };
+		5DEFBDA72BD8D02400AA0EA0 /* LGUserManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGUserManage.swift; sourceTree = "<group>"; };
+		5DEFBDA82BD8D02500AA0EA0 /* LCAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCAPI.swift; sourceTree = "<group>"; };
+		5DEFBDA92BD8D02500AA0EA0 /* LCStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCStruct.swift; sourceTree = "<group>"; };
+		5DEFBDAA2BD8D02600AA0EA0 /* LCRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCRequest.swift; sourceTree = "<group>"; };
+		5DEFBDAB2BD8D02600AA0EA0 /* LCStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCStorage.swift; sourceTree = "<group>"; };
+		5DEFBDAC2BD8D02600AA0EA0 /* LCDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDefaults.swift; sourceTree = "<group>"; };
+		5DEFBDB82BD8D35B00AA0EA0 /* MarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		5DEFBDBA2BD93ABF00AA0EA0 /* LCForumHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCForumHTML.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +118,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEFBDC12BD94F8600AA0EA0 /* ZMarkupParser in Frameworks */,
+				5DEFBDB72BD8D06800AA0EA0 /* SQLite in Frameworks */,
 				5D47B7912BD7F976004C0EA7 /* Alamofire in Frameworks */,
 				5D9D9F872BD6390E001BC769 /* Hero in Frameworks */,
 				5D47B7942BD7F98A004C0EA7 /* SwiftyJSON in Frameworks */,
 				5D9380532BD73E5300CB938A /* SnapKit in Frameworks */,
+				5DACBA042BDA13C100DD4D7C /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +177,7 @@
 			children = (
 				5D9D9F902BD67F14001BC769 /* ZFRippleButton.swift */,
 				5D7A1F6F2BD6C3EB006D01AF /* TRRippleView.swift */,
+				5DEFBDB82BD8D35B00AA0EA0 /* MarqueeLabel.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -254,6 +283,16 @@
 		5DD4D8C32BD2AA44001D8D17 /* CoreLand */ = {
 			isa = PBXGroup;
 			children = (
+				5DACBA002BD9D99600DD4D7C /* TRRegexTool.swift */,
+				5DEFBDA82BD8D02500AA0EA0 /* LCAPI.swift */,
+				5DEFBDAC2BD8D02600AA0EA0 /* LCDefaults.swift */,
+				5DEFBDA52BD8D02300AA0EA0 /* LCDemo.swift */,
+				5DEFBDA62BD8D02400AA0EA0 /* LCParser.swift */,
+				5DEFBDAA2BD8D02600AA0EA0 /* LCRequest.swift */,
+				5DEFBDAB2BD8D02600AA0EA0 /* LCStorage.swift */,
+				5DEFBDA92BD8D02500AA0EA0 /* LCStruct.swift */,
+				5DEFBDA72BD8D02400AA0EA0 /* LGUserManage.swift */,
+				5DEFBDBA2BD93ABF00AA0EA0 /* LCForumHTML.swift */,
 			);
 			path = CoreLand;
 			sourceTree = "<group>";
@@ -279,6 +318,9 @@
 				5D9380522BD73E5300CB938A /* SnapKit */,
 				5D47B7902BD7F976004C0EA7 /* Alamofire */,
 				5D47B7932BD7F98A004C0EA7 /* SwiftyJSON */,
+				5DEFBDB62BD8D06800AA0EA0 /* SQLite */,
+				5DEFBDC02BD94F8600AA0EA0 /* ZMarkupParser */,
+				5DACBA032BDA13C100DD4D7C /* AlamofireImage */,
 			);
 			productName = CrossLand;
 			productReference = 5DA62A362BD1FE35000D7F65 /* CrossLand.app */;
@@ -357,6 +399,9 @@
 				5D9380512BD73E5300CB938A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				5D47B78F2BD7F976004C0EA7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5D47B7922BD7F98A004C0EA7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				5DEFBDB52BD8D06800AA0EA0 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				5DEFBDBF2BD94F8600AA0EA0 /* XCRemoteSwiftPackageReference "ZMarkupParser" */,
+				5DACBA022BDA13C100DD4D7C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 5DA62A372BD1FE35000D7F65 /* Products */;
 			projectDirPath = "";
@@ -408,17 +453,28 @@
 			files = (
 				5D7A1F702BD6C3EB006D01AF /* TRRippleView.swift in Sources */,
 				5DD4D8BD2BD27BFD001D8D17 /* TRDynamicFont.swift in Sources */,
+				5DEFBDB32BD8D02600AA0EA0 /* LCStorage.swift in Sources */,
+				5DACBA012BD9D99600DD4D7C /* TRRegexTool.swift in Sources */,
+				5DEFBDBB2BD93ABF00AA0EA0 /* LCForumHTML.swift in Sources */,
+				5DEFBDB92BD8D35B00AA0EA0 /* MarqueeLabel.swift in Sources */,
 				5DA62A3E2BD1FE35000D7F65 /* ViewController.swift in Sources */,
+				5DEFBDAE2BD8D02600AA0EA0 /* LCParser.swift in Sources */,
+				5DEFBDAD2BD8D02600AA0EA0 /* LCDemo.swift in Sources */,
 				5DCA438A2BD5FA8700201601 /* VCEmoticonInput2.swift in Sources */,
 				5D47B78E2BD7F92D004C0EA7 /* VCImageViewer.swift in Sources */,
+				5DEFBDB22BD8D02600AA0EA0 /* LCRequest.swift in Sources */,
 				5DA62A3A2BD1FE35000D7F65 /* AppDelegate.swift in Sources */,
+				5DEFBDAF2BD8D02600AA0EA0 /* LGUserManage.swift in Sources */,
 				5DD4D8C22BD29211001D8D17 /* TVCLogin.swift in Sources */,
 				5DEFBDA42BD8952400AA0EA0 /* TRImageLite.swift in Sources */,
 				5DA62A722BD20C94000D7F65 /* TVCSettings.swift in Sources */,
 				5D9D9F932BD69519001BC769 /* TVForumTable.swift in Sources */,
 				5D9D9F912BD681D9001BC769 /* ZFRippleButton.swift in Sources */,
 				5DA62A3C2BD1FE35000D7F65 /* SceneDelegate.swift in Sources */,
+				5DEFBDB12BD8D02600AA0EA0 /* LCStruct.swift in Sources */,
+				5DEFBDB42BD8D02600AA0EA0 /* LCDefaults.swift in Sources */,
 				5D9D9F8B2BD6650F001BC769 /* VCFirstLogin.swift in Sources */,
+				5DEFBDB02BD8D02600AA0EA0 /* LCAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +867,30 @@
 				minimumVersion = 1.6.3;
 			};
 		};
+		5DACBA022BDA13C100DD4D7C /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
+		5DEFBDB52BD8D06800AA0EA0 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		5DEFBDBF2BD94F8600AA0EA0 /* XCRemoteSwiftPackageReference "ZMarkupParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZhgChgLi/ZMarkupParser.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -833,6 +913,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5D9D9F852BD6390E001BC769 /* XCRemoteSwiftPackageReference "Hero" */;
 			productName = Hero;
+		};
+		5DACBA032BDA13C100DD4D7C /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DACBA022BDA13C100DD4D7C /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		5DEFBDB62BD8D06800AA0EA0 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEFBDB52BD8D06800AA0EA0 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		5DEFBDC02BD94F8600AA0EA0 /* ZMarkupParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DEFBDBF2BD94F8600AA0EA0 /* XCRemoteSwiftPackageReference "ZMarkupParser" */;
+			productName = ZMarkupParser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
