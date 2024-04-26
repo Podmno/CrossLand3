@@ -15,6 +15,14 @@ public class TRRippleButton : ZFRippleButton {
     @IBInspectable var roundRipple: Bool = false
     @IBInspectable var statusChange: Bool = false
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -89,6 +97,9 @@ public class TRRippleButton : ZFRippleButton {
 //}
 
 public class TRRippleCell: UITableViewCell {
+    
+    
+    
     let cell = TRRippleButton()
     public override func awakeFromNib() {
         super.awakeFromNib()

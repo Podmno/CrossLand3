@@ -84,7 +84,6 @@ public class LCParser: NSObject {
     func getTimeCurrentDescription(timeStamp: Double) -> String {
             //获取当前的时间戳
             let currentTime = Date().timeIntervalSince1970
-            print(currentTime,   timeStamp, "sdsss")
             //时间戳为毫秒级要 ／ 1000， 秒就不用除1000，参数带没带000
             let timeSta:TimeInterval = TimeInterval(timeStamp)
             //时间差

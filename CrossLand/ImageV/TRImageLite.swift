@@ -53,8 +53,12 @@ public class TRImageLite: UIView {
     
     public func refreshImage() {
         //image.layer.cornerRadius = 8.0
-        
-        image.af.setImage(withURL: URL(string: imageUrl)!)
+        self.image.alpha = 1.0
+        self.image.af.setImage(withURL: URL(string: self.imageUrl)!)
+    }
+    
+    public func removeImage() {
+        self.image.alpha = 0.0
     }
     
     @objc func imageViewClick(tap: UIGestureRecognizer) {

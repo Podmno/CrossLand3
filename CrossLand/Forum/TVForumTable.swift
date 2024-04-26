@@ -7,23 +7,66 @@
 
 import UIKit
 
+let staticCDNAddress = "https://image.nmb.best/image/"
+
 struct TVForumTableConfiguration {
     
 }
 
-struct TVMainContentCellConfiguration {
-    var contentSelectable: Bool = false
+public struct TVMainContentCellConfiguration {
+    public var contentSelectable: Bool = false
     
-    var mainThread: LSThread = LSThread()
+    // 提前渲染富文本 取消：取得的性能收益不明显并且会导致辅助功能的字体大小调节功能失效
+    //public var renderTextView: NSAttributedString? = nil
+    
+    public var timeDescription: String = ""
+    
+    public var threadExtraData: String = ""
+    
+
+    
+    var mainThread: LSThread = LSThread() {
+        didSet {
+            //renderTextView = LCForumHTML.shared.parseAttributedLabel(content: mainThread.threadContent)
+            let date = LCParser.shared.parseThreadTime(dateString: mainThread.threadDate)
+            timeDescription = LCParser.shared.getTimeCurrentDescription(timeStamp: date.timeIntervalSince1970)
+            
+            if (mainThread.threadTitle != "无标题") {
+                threadExtraData += "标题：\(mainThread.threadTitle)   "
+            }
+            
+            if (mainThread.threadName != "无名氏") {
+                threadExtraData += "用户：\(mainThread.threadName)   "
+            }
+            
+
+            
+        }
+    }
 }
 
 class TVCForumTable: UITableViewController {
     
     let API = LCAPI()
-    var mainThreadDisplayList: [LSThread] = []
+    //var mainThreadDisplayList: [LSThread] = []
+    var mainThreadConfigurationList: [TVMainContentCellConfiguration] = []
+    
+    var currentPage = 1
+    
+    let storyboardForum = UIStoryboard(name: "Forum", bundle: Bundle.main)
+    var loadingViewController: UIViewController? = nil
+    var loadingCell: UITableViewCell? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadingViewController = storyboardForum.instantiateViewController(withIdentifier: "bottomLoading")
+        loadingCell = UITableViewCell()
+        loadingCell?.addSubview(loadingViewController!.view)
+        loadingCell?.backgroundColor = UIColor.clear
+        loadingViewController!.view.snp.makeConstraints { make in
+            make.top.bottom.left.right.equalToSuperview()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,31 +75,47 @@ class TVCForumTable: UITableViewController {
         let queue = DispatchQueue(label: "initTableContent")
         queue.async {
             let result = self.API.getForum(forumID: 4, forumPage: 1)
+            var result_cfg: [TVMainContentCellConfiguration] = []
+            
+            for th in result {
+                var cfg = TVMainContentCellConfiguration()
+                // mainThread didSet 方法在子线程完成：富文本渲染 / 时间计算 / 其余标签配置
+                cfg.mainThread = th
+                result_cfg.append(cfg)
+            }
             
             DispatchQueue.main.async {
-                self.mainThreadDisplayList.append(contentsOf: result)
+                self.mainThreadConfigurationList.append(contentsOf: result_cfg)
                 self.tableView.reloadData()
             }
         }
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (indexPath.section == 1) {
+            return loadingCell ?? UITableViewCell()
+            
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: TVMainContentCell.identifier, for: indexPath) as! TVMainContentCell
-        var cfg = TVMainContentCellConfiguration()
-        cfg.mainThread = mainThreadDisplayList[indexPath.row]
-        cell.configurationTable = cfg
+        cell.configurationTable = mainThreadConfigurationList[indexPath.row]
         cell.setupContent()
         return cell
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return mainThreadDisplayList.count
+        if (section == 0) {
+            return mainThreadConfigurationList.count
+        }
+        if (section == 1) {
+            return 1
+        }
+        return 0
     }
 
 
@@ -66,8 +125,8 @@ class TVCForumTable: UITableViewController {
 
 class TVButtonCellGroup: UITableViewCell {
     
-
     
+
     static let identifier = "groupButton"
     @IBOutlet weak var btnDoPost: ZFRippleButton!
     
@@ -94,21 +153,16 @@ class TVButtonCellGroup: UITableViewCell {
     
 }
 
-let demo = """
-
-
-&bull; 使用逻辑与旧岛相同，禁晒妹及恶臭现充话题，建议点击<strong><a href="/t/50000001">→ 全岛总版规 ←</a><font color="#789922">&gt;&gt;No.50000001</font></strong>及各分版版规<br />
-&bull; 如对某版规存在异议，请点击<a href="/t/50286677" target="_blank">→ 既往公告及补充说明 ←</a><font color="#789922">&gt;&gt;No.50286677</font> 如仍有异议请转至圈内
-<br />
-&bull; 客户端下载地址：<a href="https://app.nmbxd.com" target="_blank">https://app.nmbxd.com</a><br />
-
-
-"""
-
 
 class TVMainContentCell: TRRippleCell, UITextViewDelegate {
     
+    
+    
     var configurationTable = TVMainContentCellConfiguration()
+
+    var preRenderAttributedText: NSAttributedString?
+    var topViewStackHeight = 1
+    var bottomViewStackHeight = 1
     
     static let identifier = "mainCell"
     
@@ -118,7 +172,10 @@ class TVMainContentCell: TRRippleCell, UITextViewDelegate {
     
     @IBOutlet weak var titleNo: UILabel!
     @IBOutlet weak var titleDate: UILabel!
-    @IBOutlet weak var viewImage: UIView!
+    
+
+    @IBOutlet weak var imageLite: TRImageLite!
+    
     @IBOutlet weak var stackTop: UIStackView!
     @IBOutlet weak var stackBottom: UIStackView!
     
@@ -126,47 +183,88 @@ class TVMainContentCell: TRRippleCell, UITextViewDelegate {
     @IBOutlet weak var csViewImageHeight: NSLayoutConstraint!
     @IBOutlet weak var csViewImageWidth: NSLayoutConstraint!
     
+    public let sb = UIStoryboard(name: "Forum", bundle: Bundle.main)
     
-    @IBOutlet weak var csStackBottomHeight: NSLayoutConstraint!
-    @IBOutlet weak var csStackTopHeight: NSLayoutConstraint!
-    
-    let imagePreviewView = TRImageLite()
-    
+
     public func setupContent() {
-        print("setup Thread with \(configurationTable.mainThread.threadID)")
+        //print("setup Thread with \(configurationTable.mainThread.threadID)")
         
         titleTop.text = configurationTable.mainThread.threadUserHash
-        tvMain.attributedText = parser.parseAttributedLabel(content: configurationTable.mainThread.threadContent)
-        titleNo.text = "No.\(configurationTable.mainThread.threadID)"
-        let date = LCParser.shared.parseThreadTime(dateString: configurationTable.mainThread.threadDate)
-        titleDate.text = LCParser.shared.getTimeCurrentDescription(timeStamp: date.timeIntervalSince1970)
         
-        if configurationTable.mainThread.threadImg.isEmpty {
-            //csViewImageWidth.constant = 10.0
-            csViewImageHeight.constant = 1.0
-            viewImage.isHidden = true
-            imagePreviewView.awakeFromNib()
-            //imagePreviewView.removeFromSuperview()
-        } else {
-            //csViewImageWidth.constant = 200.0
-            csViewImageHeight.constant = 200.0
-            viewImage.isHidden = false
-            imagePreviewView.imageUrl = "https://image.nmb.best/image/\(configurationTable.mainThread.threadImg)\(configurationTable.mainThread.threadExt)"
+
+        //if (configurationTable.renderTextView != nil) {
+        //    tvMain.attributedText = configurationTable.renderTextView
+        //} else {
             
-            imagePreviewView.awakeFromNib()
+        //}
+        tvMain.attributedText = LCForumHTML.shared.parseAttributedLabel(content: configurationTable.mainThread.threadContent)
+        
+        titleNo.text = "No.\(configurationTable.mainThread.threadID)"
+        
+        titleDate.text = configurationTable.timeDescription
+
+        if configurationTable.mainThread.threadImg.isEmpty {
+            csViewImageHeight.constant = 1.0
+            imageLite.isHidden = true
+            imageLite.awakeFromNib()
+        } else {
+            csViewImageHeight.constant = 200.0
+            imageLite.isHidden = false
+            imageLite.imageUrl = "\(staticCDNAddress)\(configurationTable.mainThread.threadImg)\(configurationTable.mainThread.threadExt)"
+            
+            imageLite.awakeFromNib()
         }
-        imagePreviewView.frame = viewImage.bounds
+        
+
+        if (!configurationTable.threadExtraData.isEmpty) {
+            let test = sb.instantiateViewController(withIdentifier: "stackTitle") as! TVForumTableCellTitleUser
+            test.setupContent(configurationTable.threadExtraData)
+            test.view.tag = 9012
+            stackTop.addArrangedSubview(test.view)
+        } else {
+            for v in stackTop.subviews {
+                if v.tag == 9012 {
+                    v.removeFromSuperview()
+                }
+            }
+        }
+        
+        if (configurationTable.mainThread.threadSage == 1) {
+            let vc_sage = sb.instantiateViewController(identifier: "stackSAGE") as? TVForumTableCellSAGEInfo
+            if let v_sage = vc_sage?.view {
+                v_sage.tag = 9000
+                stackTop.addArrangedSubview(v_sage)
+            }
+        }
     }
     
-    let parser = LCForumHTML()
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        for view_top in stackTop.subviews {
+            view_top.removeFromSuperview()
+        }
+
+        //csStackTopHeight.constant = 1.0
+        
+        for view_bottom in stackBottom.subviews {
+            view_bottom.removeFromSuperview()
+        }
+        
+        
+        //csStackBottomHeight.constant = 1.0
+        
+    }
+    
+    
     public override func awakeFromNib() {
         super.awakeFromNib()
 
         
-        viewImage.addSubview(imagePreviewView)
-        imagePreviewView.snp.makeConstraints { make in
-            make.top.bottom.left.right.equalToSuperview()
-        }
+        //viewImage.addSubview(imagePreviewView)
+        //imagePreviewView.snp.makeConstraints { make in
+        //    make.top.bottom.left.right.equalToSuperview()
+        //}
         
         tvMain.delegate = self
 
@@ -190,6 +288,7 @@ class TVMainContentCell: TRRippleCell, UITextViewDelegate {
 //        textView.selectedTextRange = nil
 //    }
 }
+
 
 class TVMainContentCellTextView: UITextView {
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
@@ -220,6 +319,35 @@ class TVMainContentCellTextView: UITextView {
     
 }
 
+
+public class TVForumTableCellSAGEInfo: UIViewController {
+    @IBOutlet weak var lbContent: UILabel!
+}
+
+public class TVForumTableCellTitleUser: UIViewController {
+    
+    
+    @IBOutlet weak var lbContent: UILabel!
+    
+    var setImage: UIImage = UIImage(named: "title") ?? UIImage()
+    var titleContent: String = ""
+    
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        lbContent.text = titleContent
+    }
+    
+    public func setupContent(_ content: String) {
+        titleContent = content
+    }
+    
+}
 
 
 //        if !(tvMain.gestureRecognizers == nil) {

@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        UINavigationBar.appearance().shadowImage = UIImage()
+        //UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        //UINavigationBar.appearance().shadowImage = UIImage()
         
         
         
@@ -49,6 +49,7 @@ class ViewController: UIViewController {
         //self.present(vcFirst!, animated: true)
         
         vcSettings = sbSettings.instantiateInitialViewController()
+        
         //self.present(vcSettings!, animated: true)
         vcForumMain = sbMainForum.instantiateInitialViewController()
         //self.present(vcForumMain!, animated: true)

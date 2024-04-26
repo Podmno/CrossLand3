@@ -35,7 +35,7 @@ public class LCForumHTML : NSObject {
         
         
         //if let attributedString = try? NSMutableAttributedString(data: data!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
-        font_apply.addAttributes(attr, range: NSRange(location: 0, length: font_apply.length))
+         font_apply.addAttributes(attr, range: NSRange(location: 0, length: font_apply.length))
             //attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.label, range: NSRange(location: 0, length: attributedString.length))
     
         // 后处理 >> 跳页
