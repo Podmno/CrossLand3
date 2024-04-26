@@ -12,8 +12,8 @@ import SnapKit
 
 public class TRRippleButton : ZFRippleButton {
     
-    @IBInspectable var roundRipple: Bool = false
-    @IBInspectable var statusChange: Bool = false
+    var roundRipple: Bool = false
+    var statusChange: Bool = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)

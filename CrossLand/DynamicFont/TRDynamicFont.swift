@@ -33,37 +33,21 @@ extension UIFont {
 
 extension UILabel {
     
-    @IBInspectable var drawColorTint: Bool {
-        set {
-            if #available(macCatalyst 15.0,iOS 15.0, *) {
-                self.textColor = .tintColor
-            }
-        }
-        get {
-            return self.textColor == tintColor
+    func dynamicBoldFontStyle() {
+        self.font = self.font.bold()
+    }
+    
+    func drawColorTint() {
+        if #available(macCatalyst 15.0,iOS 15.0, *) {
+            self.textColor = .tintColor
         }
     }
     
-    @IBInspectable var dynamicBoldFontStyle: Bool {
-        
-        set {
-            self.font = self.font.bold()
-        }
-        
-        get {
-            return self.dynamicBoldFontStyle
-        }
+    func dynamicLightFontStyle() {
+        self.font = self.font.light()
     }
     
-    @IBInspectable var dynamicLightFontStyle: Bool {
-        set {
-            self.font = self.font.light()
-        }
-        
-        get {
-            return self.dynamicLightFontStyle
-        }
-    }
+
 }
 
 

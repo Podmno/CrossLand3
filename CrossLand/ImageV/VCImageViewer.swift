@@ -97,7 +97,7 @@ class PanZoomImageView: UIScrollView {
     
     public let imageView = UIImageView()
     
-    @IBInspectable private var imageName: String? {
+    private var imageName: String? {
         didSet {
             //imageView.heroID = "placeHolderImage"
 
